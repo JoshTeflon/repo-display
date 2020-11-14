@@ -1,0 +1,26 @@
+{
+  "name": "repo-display",
+  "version": "1.0.0",
+  "description": "Rendering a list of my repositories with the GRAPHQL Github API",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshTeflon/repo-display.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "Github",
+    "API",
+    "JoshTeflon",
+    "Joshua Enikele"
+  ],
+  "author": "Joshua Enikele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshTeflon/repo-display/issues"
+  },
+  "homepage": "https://github.com/JoshTeflon/repo-display#readme"
+}
