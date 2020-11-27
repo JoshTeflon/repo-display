@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Rendering a list of my repositories with the GRAPHQL Github API",
   "main": "script.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +23,6 @@
   "bugs": {
     "url": "https://github.com/JoshTeflon/repo-display/issues"
   },
-  "homepage": "https://github.com/JoshTeflon/repo-display#readme",
+  "homepage": "https://repo-display.netlify.app/",
   "dependencies": {}
 }

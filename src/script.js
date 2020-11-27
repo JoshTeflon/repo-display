@@ -14,9 +14,11 @@ document.onreadystatechange = function() {
 
 const baseUrl = "https://api.github.com/graphql";
 
+const token = config.ACCESS_TOKEN;
+
 myHeaders = {
   "Content-Type": "application/json",
-  Authorization: "bearer ac52abf06e5788dbf0ac341dbd0aaac31b916060"
+  Authorization: `bearer ${token}`
 };
 
 const queryFetch = (query) => {
@@ -149,8 +151,8 @@ queryFetch(
         <div class="repo-description">${repoData.description}</div>
       <ul>
         <li>
-          <span class="repo-language-color" style="background-color: #000"></span>
-          
+          <span class="repo-language-color" style="background-color: ${repoData.primaryLanguage.color}"></span>
+          ${repoData.primaryLanguage.name}
         </li>
         <li class="star-fork">
           <svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">
@@ -164,7 +166,7 @@ queryFetch(
           </svg>
             ${repoData.forkCount}
         </li>
-        <li>Updated on ${repoData.updatedAt}</li>
+        <li>Updated on ${new Date(repoData.updatedAt).toLocaleString('en-GB', { timeZone: 'UTC', day: '2-digit', month: 'long' })}</li>
       </ul>
     </div>
       <div>

@@ -111,6 +111,10 @@ header {
     border-radius: 0.3rem;
 }
 
+.header-items input {
+    color: #fff;
+}
+
 .header-items label img {
     align-self: center;
     margin-right: 0.5rem;
@@ -303,6 +307,7 @@ main {
     background-color: #fff;
     border: 1px solid #d1d5da;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #section-left span {
